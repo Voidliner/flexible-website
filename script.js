@@ -55,7 +55,21 @@ document.addEventListener("DOMContentLoaded", () => {
     slideButton.style.color = "white";
     slideButton.style.transition = "bottom 0.3s ease, opacity 0.3s ease";
 
-    
+    const TitleDiv = document.createElement('div');
+    TitleDiv.id = 'Title';
+    TitleDiv.innerText = 'Let\'s Read'; // Button text
+    TitleDiv.style.position = 'absolute'; // Position it relative to the square
+    TitleDiv.style.top = '40%'; // Position from the top
+    TitleDiv.style.left = '30%'; // Center horizontally
+    TitleDiv.style.transform = 'translateX(-50%)'; // Adjust for centering
+    TitleDiv.style.opacity = '0'; // Start invisible
+    TitleDiv.style.transform = 'translate(-50%, 20px)'; // Start below the center
+    TitleDiv.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    TitleDiv.style.color = "white";
+    TitleDiv.style.fontSize = '70px'; 
+    TitleDiv.style.fontWeight = 'bold';
+    TitleDiv.style.textShadow = '1px 1px 0 rgba(0, 0, 0, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.8), 1px -1px 0 rgba(0, 0, 0, 0.8), -1px 1px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
+
 
     square.addEventListener('click', function() {
 	if (opacity < 1) opacity += 0.1; // Increase opacity on hover
@@ -94,6 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.left = "30%"; // Position from the left
         Cat.style.width = "66%"; // Fixed width
         Cat.style.height = "84%"; // Fixed height
+        TitleDiv.style.opacity = '1'; // Fade in
+        TitleDiv.style.transform = 'translate(-50%, 0)';
     } else {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
@@ -101,6 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.left = "0%"; // Position from the left
         Cat.style.width = "110%"; // Fixed width
         Cat.style.height = "34%"; // Fixed height
+        TitleDiv.style.opacity = '1'; // Fade in
+        TitleDiv.style.transform = 'translate(-50%, 0)';
     		}
 	}
 
@@ -119,4 +137,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(Logo);
     document.body.appendChild(Cat);
     document.body.appendChild(slideButton);
+    document.body.appendChild(TitleDiv);
 });
