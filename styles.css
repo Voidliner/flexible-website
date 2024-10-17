@@ -1,0 +1,9 @@
+#slideButton {
+    position: absolute; /* Position relative to the square */
+    bottom: 100%; /* Start hidden above the square */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    opacity: 1; /* Start fully transparent */
+    transition: bottom 0.3s ease, opacity 0.3s ease; /* Transition for smooth sliding */
+    visibility: hidden; /* Hidden initially */
+}
