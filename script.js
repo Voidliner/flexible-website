@@ -45,15 +45,35 @@ document.addEventListener("DOMContentLoaded", () => {
     Cat.style.opacity = "0";
 
 
-    const slideButton = document.createElement('div');
-    slideButton.id = 'slideButton';
-    slideButton.innerText = 'Select Me'; // Button text
-    slideButton.style.position = 'absolute'; // Position it relative to the square
-    slideButton.style.left = '50%'; // Center horizontally
-    slideButton.style.transform = 'translateX(-50%)'; // Centering
-    slideButton.style.padding = '10px 20px'; // Button padding
-    slideButton.style.color = "white";
-    slideButton.style.transition = "bottom 0.3s ease, opacity 0.3s ease";
+    const Home = document.createElement('div');
+    Home.id = 'Home';
+    Home.innerText = 'Home'; // Button text
+    Home.style.position = 'absolute'; // Position it relative to the square
+    Home.style.left = '50%'; // Center horizontally
+    Home.style.transform = 'translateX(-50%)'; // Centering
+    Home.style.padding = '10px 20px'; // Button padding
+    Home.style.color = "white";
+    Home.style.transition = "bottom 0.3s ease, opacity 0.3s ease";
+
+    const About = document.createElement('div');
+    About.id = 'About';
+    About.innerText = 'About'; // Button text
+    About.style.position = 'absolute'; // Position it relative to the square
+    About.style.left = '60%'; // Center horizontally
+    About.style.transform = 'translateX(-50%)'; // Centering
+    About.style.padding = '10px 20px'; // Button padding
+    About.style.color = "white";
+    About.style.transition = "bottom 0.3s ease, opacity 0.3s ease";
+
+    const Programs = document.createElement('div');
+    Programs.id = 'Programs';
+    Programs.innerText = 'Programs'; // Button text
+    Programs.style.position = 'absolute'; // Position it relative to the square
+    Programs.style.left = '70%'; // Center horizontally
+    Programs.style.transform = 'translateX(-50%)'; // Centering
+    Programs.style.padding = '10px 20px'; // Button padding
+    Programs.style.color = "white";
+    Programs.style.transition = "bottom 0.3s ease, opacity 0.3s ease";
 
     const TitleDiv = document.createElement('div');
     TitleDiv.id = 'Title';
@@ -86,15 +106,33 @@ document.addEventListener("DOMContentLoaded", () => {
         if (mouseY < squareBottom) {
             if (opacity < 1) opacity += 0.1; // Increase opacity on hover
             square.style.opacity = opacity; // Apply the new opacity
-            slideButton.style.bottom = '90%'; // Slide down
-            slideButton.style.opacity = '1'; // Fade in
-            slideButton.style.visibility = 'visible'; // Make it visible
+            Home.style.bottom = '90%'; // Slide down
+            Home.style.opacity = '1'; // Fade in
+            Home.style.visibility = 'visible'; // Make it visible
+	    setTimeout(() => {
+        	About.style.bottom = '90%'; // Slide down
+        	About.style.opacity = '1'; // Fade in
+        	About.style.visibility = 'visible'; // Make it visible
+    		}, 50);
+	    setTimeout(() => {
+        	Programs.style.bottom = '90%'; // Slide down
+        	Programs.style.opacity = '1'; // Fade in
+        	Programs.style.visibility = 'visible'; // Make it visible
+    		}, 100);
 	    
         } else {
             if (opacity > 0.5) opacity -= 0.1; // Reset opacity when not hovering
             square.style.opacity = opacity; // Apply the new opacity
-            slideButton.style.bottom = '100%'; // Slide up
-            slideButton.style.opacity = '0'; // Fade out
+            Home.style.bottom = '100%'; // Slide up
+            Home.style.opacity = '0'; // Fade out
+            setTimeout(() => {
+	    	About.style.bottom = '100%'; // Slide up
+            	About.style.opacity = '0'; // Fade out
+		}, 50);
+	    setTimeout(() => {
+	    	Programs.style.bottom = '100%'; // Slide up
+            	Programs.style.opacity = '0'; // Fade out
+		}, 100);
         }
     });
 
@@ -137,6 +175,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(square);
     document.body.appendChild(Logo);
     document.body.appendChild(Cat);
-    document.body.appendChild(slideButton);
+    document.body.appendChild(Home);
+    document.body.appendChild(About);
+    document.body.appendChild(Programs);
     document.body.appendChild(TitleDiv);
 });
