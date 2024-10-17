@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     Logo.style.position = "fixed";
     Logo.style.top = "10px"; 
     Logo.style.left = "10px"; 
-    Logo.style.width = "130px"; 
-    Logo.style.height = "100px"; 
+    Logo.style.width = "100px"; 
+    Logo.style.height = "70px"; 
     Logo.style.opacity = "1"; // Default opacity
 
     const Cat = new Image();
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.transform = "translateY(0)";
         Cat.style.top = "170px"; // Position from the top
         Cat.style.left = "30%"; // Position from the left
-        Cat.style.width = "90%"; // Fixed width
+        Cat.style.width = "130%"; // Fixed width
         Cat.style.height = "54%"; // Fixed height
     		}
 	}
