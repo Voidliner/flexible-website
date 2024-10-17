@@ -98,9 +98,9 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
         Cat.style.top = "170px"; // Position from the top
-        Cat.style.left = "30%"; // Position from the left
-        Cat.style.width = "130%"; // Fixed width
-        Cat.style.height = "54%"; // Fixed height
+        Cat.style.left = "20%"; // Position from the left
+        Cat.style.width = "110%"; // Fixed width
+        Cat.style.height = "34%"; // Fixed height
     		}
 	}
 
