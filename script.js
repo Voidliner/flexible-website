@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const mouseY = event.clientY; // Get Y coordinate of the mouse
         const squareBottom = square.getBoundingClientRect().bottom; // Get the bottom position of the square
 
-        if (mouseY < squareBottom) {
+        if ((mouseY < squareBottom) && (mouseY > 0)){
             if (opacity < 1) opacity += 0.1; // Increase opacity on hover
             square.style.opacity = opacity; // Apply the new opacity
             Home.style.bottom = '90%'; // Slide down
@@ -180,12 +180,12 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.height = "54%"; // Fixed height
 	TitleDiv.style.left = '50%';
         TitleDiv.style.opacity = '1'; // Fade in
-	TitleDiv.style.fontSize = '30px'; 
+	TitleDiv.style.fontSize = '20px'; 
         TitleDiv.style.transform = 'translate(-50%, 0)';
         TitleDiv.style.fontSize = '30px';
 	TitleDiv.style.zIndex = "1";
 	TitleDiv1.style.left = '50%'
-	TitleDiv1.style.fontSize = '50px'; ;
+	TitleDiv1.style.fontSize = '40px'; ;
         TitleDiv1.style.opacity = '1'; // Fade in
         TitleDiv1.style.transform = 'translate(-50%, 0)';
 	TitleDiv1.style.zIndex = "1";
