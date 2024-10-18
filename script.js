@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", () => {
         TitleDiv3.style.opacity = '1'; // Fade in
         TitleDiv3.style.transform = 'translate(-50%, 0)';
 	TitleDiv3.style.zIndex = "1";
-	StartButton.style.top = '70%'; // Position from the top
+	StartButton.style.top = '75%'; // Position from the top
     	StartButton.style.left = '50%'; // Position from the left
 	StartButton.style.padding = '5px 130px'; // Padding for the button
     		}
