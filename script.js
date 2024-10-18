@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const TitleDiv2 = document.createElement('div');
     TitleDiv2.id = 'Title';
-    TitleDiv2.innerText = 'Mag-explore'; // Button text
+    TitleDiv2.innerText = 'Magexplore'; // Button text
     TitleDiv2.style.position = 'absolute'; // Position it relative to the square
     TitleDiv2.style.top = '30%'; // Position from the top
     TitleDiv2.style.left = '30%'; // Center horizontally
@@ -193,7 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.top = "170px"; // Position from the top
         Cat.style.left = "0%"; // Position from the left
         Cat.style.width = "90%"; // Fixed width
-        Cat.style.height = "44%"; // Fixed height
+        Cat.style.height = "54%"; // Fixed height
 	TitleDiv1.style.top = '40%';
 	TitleDiv1.style.left = '50%';
         TitleDiv1.style.opacity = '1'; // Fade in
