@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     TitleDiv3.style.textShadow = '2px 2px 0 rgba(0, 0, 0, 0.8), -2px -2px 0 rgba(0, 0, 0, 0.8), 2px -2px 0 rgba(0, 0, 0, 0.8), -2px 2px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
 
     const StartButton = document.createElement('button');
-    StartButton.innerText = 'Alamin'; // Button text
+    StartButton.innerText = 'Simulan Natin'; // Button text
     StartButton.style.backgroundColor = 'black'; // Green background
     StartButton.style.color = 'white'; // White text
     StartButton.style.border = 'none'; // No border
@@ -135,11 +135,13 @@ document.addEventListener("DOMContentLoaded", () => {
     StartButton.style.padding = '15px 100px'; // Padding for the button
     StartButton.style.fontSize = '20px'; // Font size
     StartButton.style.cursor = 'pointer'; // Pointer cursor on hover
-    StartButton.style.transition = 'background-color 0.3s ease'; // Transition for hover effect
     StartButton.style.position = 'absolute';
     StartButton.style.top = '65%'; // Position from the top
     StartButton.style.left = '30%'; // Position from the left
-    StartButton.style.transform = 'translate(-50%, -50%)';
+    StartButton.style.transform = 'translate(-50%, 20%)';
+    StartButton.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    StartButton.style.opacity = '0'; // Start invisible
+
 
     square.addEventListener('click', function() {
 	if (opacity < 1) opacity += 0.1; // Increase opacity on hover
@@ -208,6 +210,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	StartButton.style.top = '60%'; // Position from the top
         StartButton.style.left = '30%'; // Position from the left
 	StartButton.style.padding = '15px 100px'; // Padding for the button
+	setTimeout(() => {	
+		StartButton.style.transform = 'translate(-50%, 0)';
+		StartButton.style.opacity = "1";
+		}, 200);
     
     } else {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
@@ -235,10 +241,14 @@ document.addEventListener("DOMContentLoaded", () => {
         TitleDiv3.style.opacity = '1'; // Fade in
         TitleDiv3.style.transform = 'translate(-50%, 0)';
 	TitleDiv3.style.zIndex = "1";
-	StartButton.style.top = '74%'; // Position from the top
+	StartButton.style.top = '80%'; // Position from the top
     	StartButton.style.left = '50%'; // Position from the left
 	StartButton.style.padding = '5px 130px'; // Padding for the button
-    		}
+	setTimeout(() => {	
+		StartButton.style.transform = 'translate(-50%, 0)';
+		StartButton.style.opacity = "1";
+		}, 200);
+    			}
 	}
 
 	// Call the function after a timeout
