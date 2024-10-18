@@ -210,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	TitleDiv3.style.top = '60%';
 	TitleDiv3.style.left = '50%'
-	TitleDiv3.style.fontSize = '40px'; ;
+	TitleDiv3.style.fontSize = '60px'; ;
         TitleDiv3.style.opacity = '1'; // Fade in
         TitleDiv3.style.transform = 'translate(-50%, 0)';
 	TitleDiv3.style.zIndex = "1";
