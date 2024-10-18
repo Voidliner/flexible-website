@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Home.id = 'Home';
     Home.innerText = 'Home'; // Button text
     Home.style.position = 'absolute'; // Position it relative to the square
+    Home.style.bottom = '110%';
     Home.style.left = '50%'; // Center horizontally
     Home.style.transform = 'translateX(-50%)'; // Centering
     Home.style.padding = '10px 20px'; // Button padding
@@ -59,6 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
     About.id = 'About';
     About.innerText = 'About'; // Button text
     About.style.position = 'absolute'; // Position it relative to the square
+    About.style.bottom = '110%';
     About.style.left = '60%'; // Center horizontally
     About.style.transform = 'translateX(-50%)'; // Centering
     About.style.padding = '10px 20px'; // Button padding
@@ -69,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Programs.id = 'Programs';
     Programs.innerText = 'Programs'; // Button text
     Programs.style.position = 'absolute'; // Position it relative to the square
+    Programs.style.bottom = '110%';
     Programs.style.left = '70%'; // Center horizontally
     Programs.style.transform = 'translateX(-50%)'; // Centering
     Programs.style.padding = '10px 20px'; // Button padding
@@ -232,9 +235,9 @@ document.addEventListener("DOMContentLoaded", () => {
         TitleDiv3.style.opacity = '1'; // Fade in
         TitleDiv3.style.transform = 'translate(-50%, 0)';
 	TitleDiv3.style.zIndex = "1";
-	StartButton.style.top = '70%'; // Position from the top
+	StartButton.style.top = '80%'; // Position from the top
     	StartButton.style.left = '50%'; // Position from the left
-	StartButton.style.padding = '10px 130px'; // Padding for the button
+	StartButton.style.padding = '5px 130px'; // Padding for the button
     		}
 	}
 
@@ -262,7 +265,7 @@ document.addEventListener("DOMContentLoaded", () => {
     dimensionDiv.style.color = 'white';
     dimensionDiv.style.padding = '10px';
     dimensionDiv.style.borderRadius = '5px';
-    dimensionDiv.style.fontSize = '16px';
+    dimensionDiv.style.fontSize = '10px';
     dimensionDiv.style.zIndex = '1000'; // Ensure it's on top
 
     // Initial call to set dimensions
