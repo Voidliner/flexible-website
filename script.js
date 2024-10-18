@@ -202,8 +202,10 @@ document.addEventListener("DOMContentLoaded", () => {
     	TitleDiv3.style.fontSize = '90px'; 
         TitleDiv3.style.opacity = '1'; // Fade in
         TitleDiv3.style.transform = 'translate(-50%, 0)';
-	StartButton.style.top = '65%'; // Position from the top
+	StartButton.style.top = '60%'; // Position from the top
         StartButton.style.left = '30%'; // Position from the left
+	StartButton.style.padding = '15px 100px'; // Padding for the button
+    
     } else {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
@@ -232,6 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	TitleDiv3.style.zIndex = "1";
 	StartButton.style.top = '70%'; // Position from the top
     	StartButton.style.left = '50%'; // Position from the left
+	StartButton.style.padding = '15px 130px'; // Padding for the button
     		}
 	}
 
