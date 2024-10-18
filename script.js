@@ -144,8 +144,8 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
         Cat.style.top = "100px"; // Position from the top
-        Cat.style.left = "30%"; // Position from the left
-        Cat.style.width = "66%"; // Fixed width
+        Cat.style.left = "50%"; // Position from the left
+        Cat.style.width = "35%"; // Fixed width
         Cat.style.height = "84%"; // Fixed height
   	TitleDiv.style.left = '30%';
         TitleDiv.style.opacity = '1'; // Fade in
@@ -171,8 +171,29 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Optionally, call it on window resize to adjust styles dynamically
 	window.addEventListener('resize', adjustCatStyles);
 
+ 
+	function updateDimensions() {
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+        dimensionDiv.innerText = `Width: ${width}px, Height: ${height}px`;
+    	}
 
+	const dimensionDiv = document.createElement('div');
+    dimensionDiv.id = 'dimensionDiv';
+    
+    // Apply styles directly in JavaScript
+    dimensionDiv.style.position = 'fixed';
+    dimensionDiv.style.bottom = '20px';
+    dimensionDiv.style.right = '20px';
+    dimensionDiv.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    dimensionDiv.style.color = 'white';
+    dimensionDiv.style.padding = '10px';
+    dimensionDiv.style.borderRadius = '5px';
+    dimensionDiv.style.fontSize = '16px';
+    dimensionDiv.style.zIndex = '1000'; // Ensure it's on top
 
+    // Initial call to set dimensions
+    updateDimensions();
 
     // Append elements to the body
     document.body.appendChild(Background);
@@ -182,5 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(Home);
     document.body.appendChild(About);
     document.body.appendChild(Programs);
+    document.body.appendChild(dimensionDiv);
     document.body.appendChild(TitleDiv);
 });
