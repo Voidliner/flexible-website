@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     TitleDiv3.style.textShadow = '2px 2px 0 rgba(0, 0, 0, 0.8), -2px -2px 0 rgba(0, 0, 0, 0.8), 2px -2px 0 rgba(0, 0, 0, 0.8), -2px 2px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
 
     const StartButton = document.createElement('button');
-    StartButton.innerText = 'Simulan Natin'; // Button text
+    StartButton.innerText = 'Alamin'; // Button text
     StartButton.style.backgroundColor = 'black'; // Green background
     StartButton.style.color = 'white'; // White text
     StartButton.style.border = 'none'; // No border
