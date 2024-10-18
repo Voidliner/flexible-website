@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     TitleDiv.style.transform = 'translate(-50%, 20px)'; // Start below the center
     TitleDiv.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     TitleDiv.style.color = "white";
+    TitleDiv.style.fontFamily = "Arial";
     TitleDiv.style.fontSize = '70px'; 
     TitleDiv.style.fontWeight = 'bold';
     TitleDiv.style.textShadow = '1px 1px 0 rgba(0, 0, 0, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.8), 1px -1px 0 rgba(0, 0, 0, 0.8), -1px 1px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
@@ -146,18 +147,21 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.left = "30%"; // Position from the left
         Cat.style.width = "66%"; // Fixed width
         Cat.style.height = "84%"; // Fixed height
+  	TitleDiv.style.left = '30%';
         TitleDiv.style.opacity = '1'; // Fade in
         TitleDiv.style.transform = 'translate(-50%, 0)';
     } else {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
         Cat.style.top = "170px"; // Position from the top
-        Cat.style.left = "10%"; // Position from the left
+        Cat.style.left = "0%"; // Position from the left
         Cat.style.width = "110%"; // Fixed width
         Cat.style.height = "34%"; // Fixed height
+	TitleDiv.style.left = '30%';
         TitleDiv.style.opacity = '1'; // Fade in
         TitleDiv.style.transform = 'translate(-50%, 0)';
         TitleDiv.style.fontSize = '30px';
+	TitleDiv.style.zIndex = "1";
     		}
 	}
 
