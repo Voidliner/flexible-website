@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
-        Cat.style.top = "170px"; // Position from the top
+        Cat.style.top = "120px"; // Position from the top
         Cat.style.left = "10%"; // Position from the left
         Cat.style.width = "90%"; // Fixed width
         Cat.style.height = "54%"; // Fixed height
@@ -234,7 +234,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	TitleDiv3.style.zIndex = "1";
 	StartButton.style.top = '70%'; // Position from the top
     	StartButton.style.left = '50%'; // Position from the left
-	StartButton.style.padding = '15px 130px'; // Padding for the button
+	StartButton.style.padding = '10px 130px'; // Padding for the button
     		}
 	}
 
