@@ -77,9 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const TitleDiv = document.createElement('div');
     TitleDiv.id = 'Title';
-    TitleDiv.innerText = 'Let\'s Read'; // Button text
+    TitleDiv.innerText = 'Magbasa Mag-explore'; // Button text
     TitleDiv.style.position = 'absolute'; // Position it relative to the square
-    TitleDiv.style.top = '40%'; // Position from the top
+    TitleDiv.style.top = '30%'; // Position from the top
     TitleDiv.style.left = '30%'; // Center horizontally
     TitleDiv.style.transform = 'translateX(-50%)'; // Adjust for centering
     TitleDiv.style.opacity = '0'; // Start invisible
@@ -87,9 +87,25 @@ document.addEventListener("DOMContentLoaded", () => {
     TitleDiv.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     TitleDiv.style.color = "white";
     TitleDiv.style.fontFamily = "Arial";
-    TitleDiv.style.fontSize = '70px'; 
+    TitleDiv.style.fontSize = '50px'; 
     TitleDiv.style.fontWeight = 'bold';
-    TitleDiv.style.textShadow = '1px 1px 0 rgba(0, 0, 0, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.8), 1px -1px 0 rgba(0, 0, 0, 0.8), -1px 1px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
+    TitleDiv.style.textShadow = '2px 2px 0 rgba(0, 0, 0, 0.8), -2px -2px 0 rgba(0, 0, 0, 0.8), 2px -2px 0 rgba(0, 0, 0, 0.8), -2px 2px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
+
+    const TitleDiv1 = document.createElement('div');
+    TitleDiv1.id = 'Title';
+    TitleDiv1.innerText = 'Magimagine'; // Button text
+    TitleDiv1.style.position = 'absolute'; // Position it relative to the square
+    TitleDiv1.style.top = '40%'; // Position from the top
+    TitleDiv1.style.left = '30%'; // Center horizontally
+    TitleDiv1.style.transform = 'translateX(-50%)'; // Adjust for centering
+    TitleDiv1.style.opacity = '0'; // Start invisible
+    TitleDiv1.style.transform = 'translate(-50%, 20px)'; // Start below the center
+    TitleDiv1.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    TitleDiv1.style.color = "white";
+    TitleDiv1.style.fontFamily = "Arial";
+    TitleDiv1.style.fontSize = '90px'; 
+    TitleDiv1.style.fontWeight = 'bold';
+    TitleDiv1.style.textShadow = '2px 2px 0 rgba(0, 0, 0, 0.8), -2px -2px 0 rgba(0, 0, 0, 0.8), 2px -2px 0 rgba(0, 0, 0, 0.8), -2px 2px 0 rgba(0, 0, 0, 0.8)'; // Thin outline effect
 
 
     square.addEventListener('click', function() {
@@ -150,18 +166,25 @@ document.addEventListener("DOMContentLoaded", () => {
   	TitleDiv.style.left = '30%';
         TitleDiv.style.opacity = '1'; // Fade in
         TitleDiv.style.transform = 'translate(-50%, 0)';
+	TitleDiv1.style.left = '30%';
+        TitleDiv1.style.opacity = '1'; // Fade in
+        TitleDiv1.style.transform = 'translate(-50%, 0)';
     } else {
         Cat.style.opacity = "1"; // Change opacity to 1 for fade-in effect
         Cat.style.transform = "translateY(0)";
         Cat.style.top = "170px"; // Position from the top
         Cat.style.left = "0%"; // Position from the left
         Cat.style.width = "110%"; // Fixed width
-        Cat.style.height = "34%"; // Fixed height
-	TitleDiv.style.left = '30%';
+        Cat.style.height = "54%"; // Fixed height
+	TitleDiv.style.left = '50%';
         TitleDiv.style.opacity = '1'; // Fade in
         TitleDiv.style.transform = 'translate(-50%, 0)';
         TitleDiv.style.fontSize = '30px';
 	TitleDiv.style.zIndex = "1";
+	TitleDiv1.style.left = '50%';
+        TitleDiv1.style.opacity = '1'; // Fade in
+        TitleDiv1.style.transform = 'translate(-50%, 0)';
+	TitleDiv1.style.zIndex = "1";
     		}
 	}
 
@@ -205,4 +228,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.appendChild(Programs);
     document.body.appendChild(dimensionDiv);
     document.body.appendChild(TitleDiv);
+    document.body.appendChild(TitleDiv1);
 });
