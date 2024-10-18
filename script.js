@@ -116,11 +116,8 @@ document.addEventListener("DOMContentLoaded", () => {
             slideButton.style.visibility = 'visible'; // Make it visible
 	});
 
-    document.addEventListener('mousemove', (event) => {
-        const mouseY = event.clientY; // Get Y coordinate of the mouse
-        const squareBottom = square.getBoundingClientRect().bottom; // Get the bottom position of the square
-
-        if ((mouseY < squareBottom) && (mouseY > 0)){
+    
+        square.addEventListener('mouseover', () => {
             if (opacity < 1) opacity += 0.1; // Increase opacity on hover
             square.style.opacity = opacity; // Apply the new opacity
             Home.style.bottom = '90%'; // Slide down
@@ -137,7 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
         	Programs.style.visibility = 'visible'; // Make it visible
     		}, 100);
 	    
-        } else {
+        });
+
+	square.addEventListener('mouseout', () => {
             if (opacity > 0.5) opacity -= 0.1; // Reset opacity when not hovering
             square.style.opacity = opacity; // Apply the new opacity
             Home.style.bottom = '100%'; // Slide up
@@ -150,9 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	    	Programs.style.bottom = '100%'; // Slide up
             	Programs.style.opacity = '0'; // Fade out
 		}, 100);
-        }
     });
-
     
     function adjustCatStyles() {
     // Check the window width and set styles accordingly
@@ -176,12 +173,13 @@ document.addEventListener("DOMContentLoaded", () => {
         Cat.style.transform = "translateY(0)";
         Cat.style.top = "170px"; // Position from the top
         Cat.style.left = "0%"; // Position from the left
-        Cat.style.width = "110%"; // Fixed width
-        Cat.style.height = "54%"; // Fixed height
+        Cat.style.width = "90%"; // Fixed width
+        Cat.style.height = "44%"; // Fixed height
 	TitleDiv.style.left = '50%';
         TitleDiv.style.opacity = '1'; // Fade in
 	TitleDiv.style.fontSize = '20px'; 
         TitleDiv.style.transform = 'translate(-50%, 0)';
+	TitleDiv.style.textAlign = 'center';
         TitleDiv.style.fontSize = '30px';
 	TitleDiv.style.zIndex = "1";
 	TitleDiv1.style.left = '50%'
